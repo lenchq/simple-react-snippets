@@ -119,11 +119,27 @@
   "Function Component": {
     "prefix": "fc",
     "body": [
+      "import React from 'react';",
+      " ",
+      "const $1: React.FunctionComponent = () => {",
+      "\treturn ( $0 );",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Function Component"
+  },
+
+  "Function Component with Props": {
+    "prefix": "fcp",
+    "body": [
+      "import React from 'react';",
+      "",
       "interface $1Props {",
       "\t$2",
       "}",
       " ",
-      "const $1: FunctionComponent<$1Props> = ($3) => {",
+      "const $1: React.FunctionComponent<$1Props> = ($3) => {",
       "\treturn ( $0 );",
       "}",
       " ",
